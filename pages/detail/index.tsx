@@ -1,5 +1,6 @@
 export default function Detail() {
     return (
+        <>
         <section className="detail pt-lg-60 pb-50">
         <div className="container-xxl container-fluid">
             <div className="detail-header pb-50">
@@ -10,7 +11,7 @@ export default function Detail() {
                 <div className="col-xl-3 col-lg-4 col-md-5 pb-30 pb-md-0 pe-md-25 text-md-start">
                     <div className="row align-items-center">
                         <div className="col-md-12 col-4">
-                            <img src="../assets/img/Thumbnail-3.png" width="280" height="380" className="img-fluid" alt=""/>
+                            <img src="/img/Thumbnail-3.png" width="280" height="380" className="img-fluid" alt=""/>
                         </div>
                         
                         <div className="col-md-12 col-8 d-md-none d-block">
@@ -31,7 +32,7 @@ export default function Detail() {
                     <form action="./checkout.html" method="POST">
                         <div className="pt-md-50 pt-30">
                             <div className="">
-                                <label for="ID" className="form-label text-lg fw-medium color-palette-1 mb-10">Verify
+                                <label htmlfor="ID" className="form-label text-lg fw-medium color-palette-1 mb-10">Verify
                                     ID</label>
                                 <input type="text" className="form-control rounded-pill text-lg" id="ID" name="ID"
                                     aria-describedby="verifyID" placeholder="Enter your ID"/>
@@ -41,7 +42,7 @@ export default function Detail() {
                             <p className="text-lg fw-medium color-palette-1 mb-md-10 mb-0">Nominal Top Up</p>
                             <div className="row justify-content-between">
                                 <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
-                                    for="topup1">
+                                    htmlfor="topup1">
                                     <input className="d-none" type="radio" id="topup1" name="topup" value="topup1"/>
                                     <div className="detail-card">
                                         <div className="d-flex justify-content-between">
@@ -59,7 +60,7 @@ export default function Detail() {
                                     </div>
                                 </label>
                                 <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
-                                    for="topup2">
+                                    htmlfor="topup2">
                                     <input className="d-none" type="radio" id="topup2" name="topup" value="topup2"/>
                                     <div className="detail-card">
                                         <div className="d-flex justify-content-between">
@@ -77,7 +78,7 @@ export default function Detail() {
                                     </div>
                                 </label>
                                 <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
-                                    for="topup3">
+                                    htmlfor="topup3">
                                     <input className="d-none" type="radio" id="topup3" name="topup" value="topup3"/>
                                     <div className="detail-card">
                                         <div className="d-flex justify-content-between">
@@ -95,7 +96,7 @@ export default function Detail() {
                                     </div>
                                 </label>
                                 <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
-                                    for="topup4">
+                                    htmlfor="topup4">
                                     <input className="d-none" type="radio" id="topup4" name="topup" value="topup4"/>
                                     <div className="detail-card">
                                         <div className="d-flex justify-content-between">
@@ -113,7 +114,7 @@ export default function Detail() {
                                     </div>
                                 </label>
                                 <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
-                                    for="topup5">
+                                    htmlfor="topup5">
                                     <input className="d-none" type="radio" id="topup5" name="topup" value="topup5"/>
                                     <div className="detail-card">
                                         <div className="d-flex justify-content-between">
@@ -140,7 +141,7 @@ export default function Detail() {
                             <fieldset id="paymentMethod">
                                 <div className="row justify-content-between">
                                     <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
-                                        for="transfer">
+                                        htmlfor="transfer">
                                         <input className="d-none" type="radio" id="transfer" name="paymentMethod"
                                             value="transfer"/>
                                         <div className="detail-card">
@@ -158,7 +159,7 @@ export default function Detail() {
                                         </div>
                                     </label>
                                     <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
-                                        for="visa">
+                                        htmlfor="visa">
                                         <input className="d-none" type="radio" id="visa" name="paymentMethod" value="visa"/>
                                         <div className="detail-card">
                                             <div className="d-flex justify-content-between">
@@ -167,8 +168,9 @@ export default function Detail() {
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="10" cy="10" r="10" fill="#CDF1FF" />
                                                     <path d="M5.83301 10L8.46459 12.5L14.1663 7.5" stroke="#00BAFF"
-                                                        stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" >
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
                                                 </svg>
                                             </div>
                                             <p className="text-lg color-palette-1 m-0">Credit Card</p>
@@ -181,7 +183,7 @@ export default function Detail() {
                             </fieldset>
                         </div>
                         <div className="pb-50">
-                            <label for="bankAccount" className="form-label text-lg fw-medium color-palette-1 mb-10">Bank
+                            <label htmlfor="bankAccount" className="form-label text-lg fw-medium color-palette-1 mb-10">Bank
                                 Account
                                 Name</label>
                             <input type="text" className="form-control rounded-pill text-lg" id="bankAccount"
@@ -198,6 +200,7 @@ export default function Detail() {
             </div>
         </div>
         </section>
+        </>
  
     );
 }
