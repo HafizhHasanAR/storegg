@@ -3,8 +3,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 First, run the development server:
+Voucher game Online with NextJS
+Npm install 
 
-```bash
+after that
+
 npm run dev
 # or
 yarn dev
